@@ -9,7 +9,7 @@ import VueRouter from 'vue-router'
 // import Search from "../pages/Search/Search";
 // import Order from "../pages/Order/Order";
 // import Profile from "../pages/Profile/Profile";
-
+//按需加载
 const Msite = () => import("../pages/Msite/Msite");
 const Search = () => import("../pages/Search/Search");
 const Order = () => import("../pages/Order/Order");
