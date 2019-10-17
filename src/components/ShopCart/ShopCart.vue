@@ -13,9 +13,9 @@
                     <div class="desc">另需配送费￥{{info.deliveryPrice}}元</div>
                 </div>
                 <div class="content-right">
-                    <div class="pay" :class="resultPri >0 ?'not-enough':'enough'">
+                    <router-link tag="div" :to="resultPri >0 ?'/shop/goods':'/settlement'" class="pay" :class="resultPri >0 ?'not-enough':'enough'">
                         {{resultPri >0 ? `￥${resultPri}元起送`:'结算'}}
-                    </div>
+                    </router-link>
                 </div>
             </div>
             <transition name="fade">

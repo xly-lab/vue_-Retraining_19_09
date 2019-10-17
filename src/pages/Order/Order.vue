@@ -1,13 +1,13 @@
 <template>
     <section class="order">
         <HeaderTop title="订单"/>
-        <section class="order_no_login" v-if="cartFoods.length===0">
+        <section class="order_no_login" v-if="cartFoods.length===0||userinfo._id===0">
             <img src="./images/person.png" alt="">
             <h3 v-if="userinfo._id===0">登录后查看外卖订单</h3>
             <h3 v-else-if="cartFoods.length===0">你购物车为空</h3>
             <router-link to="/login" v-if="userinfo._id===0" tag="button">立即登陆</router-link>
         </section>
-        <div class="cartFoodsList" v-else>
+        <div class="cartFoodsList" v-if="cartFoods.length!==0&&userinfo._id!==0">
             <ul>
                     <li class="food-item bottom-border-1px" v-for="(food,i) in cartFoods" :key="i" @click="showFood(food)">
                     <div class="icon">

@@ -20,6 +20,8 @@ import ShopGoods from "../pages/Shop/ShopGoods/ShopGoods";
 import Shop from "../pages/Shop/Shop";
 import ShopInfo from "../pages/Shop/ShopInfo/ShopInfo";
 import ShopRetings from "../pages/Shop/ShopRetings/ShopRetings";
+import Integral from "../pages/Profile/Integral/Integral";
+import Settlement from "../components/Settlement/Settlement";
 
 //声明使用插件
 Vue.use(VueRouter)
@@ -62,6 +64,10 @@ export default new VueRouter({
             }
         },
         {
+          path:'/integral',
+          component:Integral
+        },
+        {
             path:'/login',
             component:Login
         },
@@ -86,6 +92,10 @@ export default new VueRouter({
                 }
             ]
 
-        }
+        },
+        {
+          path:'/settlement',
+          component:Settlement
+        },
     ]
 })

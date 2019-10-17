@@ -44,24 +44,24 @@
                 <span>
                   <i class="iconfont icon-Checklist"></i>
                 </span>
-                <div class="my_order_div">
+                <router-link to="/order" class="my_order_div">
                     <span>我的订单</span>
                     <span class="my_order_icon">
                         <i class="iconfont icon-next"></i>
-                      </span>
-                </div>
+                    </span>
+                </router-link>
             </a>
             <!-- 积分商城 -->
             <a href='javascript:' class="my_order">
                 <span>
                   <i class="iconfont icon-Income"></i>
                 </span>
-                <div class="my_order_div">
+                <router-link to="/integral" class="my_order_div">
                     <span>积分商城</span>
                     <span class="my_order_icon">
                         <i class="iconfont icon-next"></i>
                     </span>
-                </div>
+                </router-link>
             </a>
             <!-- 硅谷外卖会员卡 -->
             <a href="javascript:" class="my_order">
